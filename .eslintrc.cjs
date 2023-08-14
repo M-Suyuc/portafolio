@@ -5,8 +5,6 @@ module.exports = {
     'plugin:react/recommended',
     'plugin:react/jsx-runtime',
     'plugin:react-hooks/recommended',
-    'standard',
-    'standard-jsx'
   ],
   parserOptions: { ecmaVersion: 'latest', sourceType: 'module' },
   settings: { react: { version: '18.2' } },
@@ -14,5 +12,5 @@ module.exports = {
   rules: {
     'react-refresh/only-export-components': 'warn',
     'eslint-disable-next-line react/prop-types': false,
-  }
+  },
 }
