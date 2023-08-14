@@ -1,28 +1,37 @@
-import { Download } from './SVGIcons'
-import profile from '../assets/img-profile.jpg'
+import { Download } from "./SVGIcons";
+import profile from "../assets/img-profile.jpg";
 
-function AboutMe () {
+function AboutMe() {
   return (
-    <section id='about' className='pt-8 md:pt-[4.5rem] pb-16'>
-      <h3 className='title-section'>Sobre Mi</h3>
-      <div className='grid grid-cols-[.5fr 3fr] justify-center md:grid-cols-[1fr,2fr]  gap-4 md:gap-10'>
-        <div className='flex flex-col gap-4 order-1'>
-          <div className='dark:text-[#a1a1aa] text-[#11181C]'>
-            Soy Marlon, un apasionado desarrollador web autodidacta de 22 años, dedicado a crear experiencias digitales únicas y funcionales.
+    <section id="about" className="relative pb-16 pt-8 md:pt-[4.5rem]">
+      <h3 className="title-section">Sobre Mi</h3>
+      <div className="grid-cols-[.5fr 3fr] grid justify-center gap-4  md:grid-cols-[1fr,2fr] md:gap-10">
+        <div className="order-1 flex flex-col gap-4">
+          <div className="text-[#11181C] dark:text-[#a1a1aa]">
+            Soy Marlon, un apasionado desarrollador web autodidacta de 22 años,
+            dedicado a crear experiencias digitales únicas y funcionales.
             <br />
             <br />
-            Con una mentalidad enfocada en el aprendizaje constante, busco enfrentar desafíos y superar expectativas en cada proyecto que emprendo.
+            Con una mentalidad enfocada en el aprendizaje constante, busco
+            enfrentar desafíos y superar expectativas en cada proyecto que
+            emprendo.
           </div>
-          <a href='#' className='button mx-auto md:ml-0'>Descagar cv <Download /> </a>
+          <a href="#" className="button mx-auto md:ml-0">
+            Descagar cv <Download />{" "}
+          </a>
         </div>
-        <div className='group relative my-4 mx-auto w-[180px] h-[180px] md:w-[220px] md:h-[235px] z-30 '>
-          <img className='relative w-full h-full object-cover z-20 rounded-sm overflow-hidden' src={profile} alt='img profile' />
-          <div className='bg-blue-800/40 hover:bg-white/10 w-full h-full absolute top-0 left-0 z-50'></div>
-          <div className="absolute inset-0 content[''] -top-2 -left-2 z-10 w-[100%] h-[100%] border-[3px] border-slate-300 dark:border-[#006fee] rounded-sm" />
+        <div className="group relative z-30 mx-auto my-4 h-[180px] w-[180px] md:h-[235px] md:w-[220px] ">
+          <img
+            className="relative z-20 h-full w-full overflow-hidden rounded-sm object-cover"
+            src={profile}
+            alt="img profile"
+          />
+          <div className="absolute left-0 top-0 z-50 h-full w-full bg-blue-800/40 hover:bg-white/10"></div>
+          <div className="content[''] absolute inset-0 -left-2 -top-2 z-10 h-[100%] w-[100%] rounded-sm border-[3px] border-slate-300 dark:border-[#006fee]" />
         </div>
       </div>
     </section>
-  )
+  );
 }
 
-export default AboutMe
+export default AboutMe;
