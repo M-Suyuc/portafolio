@@ -48,7 +48,7 @@ function Skills() {
         {LogosSkills.map((logo, i) => (
           <div
             key={i}
-            className="group flex max-w-xs animate-spin flex-col items-center space-y-2 rounded-lg border  border-transparent  bg-white/5 p-4 shadow-[0px_0px_15px_rgba(0,0,0,.2)]"
+            className="group flex max-w-xs flex-col items-center space-y-2 rounded-lg border  border-transparent  bg-white/5 p-4 shadow-[0px_0px_15px_rgba(0,0,0,.2)]"
           >
             <div className="aspect-square transition-all duration-200 group-hover:-rotate-12 group-hover:scale-125 group-hover:drop-shadow-[0_0_2rem_#006fee]">
               {logo.img}
