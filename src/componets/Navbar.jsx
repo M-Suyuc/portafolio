@@ -51,14 +51,15 @@ function Navbar({ isVisible }) {
               : "-bottom-full"
           } left-0 ml-auto w-full rounded-t-3xl bg-white pb-16 pt-8 shadow-[5px_15px_60px_rgba(0,0,0,.5)] dark:bg-black  md:static md:max-w-max md:rounded-none md:bg-transparent md:pb-0 md:pt-0 md:shadow-none`}
         >
-          <ul className="[] grid grid-cols-3 gap-8 md:flex md:gap-0">
+          <ul
+            className="grid grid-cols-3 gap-8 md:flex md:gap-0 
+            [&>li>a]:flex [&>li>a]:flex-col [&>li>a]:items-center [&>li>a]:font-medium  [&>li>a]:transition-colors [&>li>a]:duration-500 [&>li>a]:md:px-4 [&>li>a]:md:text-lg"
+          >
             <li>
               <a
                 href="#"
                 onClick={toggleMenu}
-                className="
-            flex flex-col items-center font-medium hover:fill-[#006fee] hover:text-[#006fee] dark:fill-white/80 dark:text-white/80 dark:hover:fill-[#006fee] dark:hover:text-[#006fee] md:px-4 md:text-lg md:hover:bg-slate-500/25 md:dark:hover:bg-white/10
-            "
+                className="hover:fill-[#006fee] hover:text-[#006fee] dark:fill-white/80 dark:text-white/80 dark:hover:fill-[#006fee] dark:hover:text-[#006fee] md:hover:bg-slate-500/25 dark:md:hover:bg-white/10"
               >
                 <Home />
                 Inicio
@@ -68,7 +69,7 @@ function Navbar({ isVisible }) {
               <a
                 href="#about"
                 onClick={toggleMenu}
-                className="flex flex-col items-center font-medium hover:fill-[#006fee] hover:text-[#006fee] dark:fill-white/80 dark:text-white/80 dark:hover:fill-[#006fee] dark:hover:text-[#006fee] md:px-4 md:text-lg md:hover:bg-slate-500/25 md:dark:hover:bg-white/10"
+                className="hover:fill-[#006fee] hover:text-[#006fee] dark:fill-white/80 dark:text-white/80 dark:hover:fill-[#006fee] dark:hover:text-[#006fee] md:hover:bg-slate-500/25 dark:md:hover:bg-white/10"
               >
                 <Profile />
                 Sobre mí
@@ -78,7 +79,7 @@ function Navbar({ isVisible }) {
               <a
                 href="#portfolio"
                 onClick={toggleMenu}
-                className="flex flex-col items-center font-medium hover:fill-[#006fee] hover:text-[#006fee] dark:fill-white/80 dark:text-white/80 dark:hover:fill-[#006fee] dark:hover:text-[#006fee] md:px-4 md:text-lg md:hover:bg-slate-500/25 md:dark:hover:bg-white/10"
+                className="hover:fill-[#006fee] hover:text-[#006fee] dark:fill-white/80 dark:text-white/80 dark:hover:fill-[#006fee] dark:hover:text-[#006fee] md:hover:bg-slate-500/25 dark:md:hover:bg-white/10"
               >
                 <Portfolio />
                 Portafolio
@@ -88,7 +89,7 @@ function Navbar({ isVisible }) {
               <a
                 href="#skills"
                 onClick={toggleMenu}
-                className="flex flex-col items-center font-medium hover:fill-[#006fee] hover:text-[#006fee] dark:fill-white/80 dark:text-white/80 dark:hover:fill-[#006fee] dark:hover:text-[#006fee] md:px-4 md:text-lg md:hover:bg-slate-500/25 md:dark:hover:bg-white/10"
+                className="hover:fill-[#006fee] hover:text-[#006fee] dark:fill-white/80 dark:text-white/80 dark:hover:fill-[#006fee] dark:hover:text-[#006fee] md:hover:bg-slate-500/25 dark:md:hover:bg-white/10"
               >
                 <Skills />
                 Skills

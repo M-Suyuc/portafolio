@@ -17,7 +17,7 @@ function AboutMe() {
             emprendo.
           </div>
           <a href="#" className="button mx-auto md:ml-0">
-            Descagar cv <Download />{" "}
+            Descagar cv <Download />
           </a>
         </div>
         <div className="group relative z-30 mx-auto my-4 h-[180px] w-[180px] md:h-[235px] md:w-[220px] ">
@@ -26,7 +26,7 @@ function AboutMe() {
             src={profile}
             alt="img profile"
           />
-          <div className="absolute left-0 top-0 z-50 h-full w-full bg-blue-800/40 hover:bg-white/10"></div>
+          <div className="absolute left-0 top-0 z-50 h-full w-full bg-blue-800/40 transition-colors duration-500 hover:bg-white/10"></div>
           <div className="content[''] absolute inset-0 -left-2 -top-2 z-10 h-[100%] w-[100%] rounded-sm border-[3px] border-slate-300 dark:border-[#006fee]" />
         </div>
       </div>
