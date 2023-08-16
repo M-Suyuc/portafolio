@@ -60,7 +60,7 @@ function HeaderMain() {
       <a
         href="#about"
         aria-label="scrool"
-        className="absolute bottom-0 left-[50%] right-[50%] hidden h-8 w-8 animate-bounce bg-white/10 fill-white/90 md:inline"
+        className="absolute bottom-0 left-[50%] right-[50%] hidden h-8 w-8 animate-bounce bg-black/20 fill-black dark:bg-white/10 dark:fill-white/50 md:inline "
       >
         <ArrowDown />
       </a>

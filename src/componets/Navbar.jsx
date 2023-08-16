@@ -110,7 +110,7 @@ function Navbar({ isVisible }) {
               isVisible && "dark:fill-black"
             }`}
           >
-            {darkMode ? <Sun /> : <Moon />}
+            {darkMode ? <Moon /> : <Sun />}
           </div>
           <div
             onClick={toggleMenu}

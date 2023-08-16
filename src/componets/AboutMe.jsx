@@ -3,7 +3,10 @@ import profile from "../assets/img-profile.jpg";
 
 function AboutMe() {
   return (
-    <section id="about" className="relative pb-16 pt-8 md:pt-[4.5rem]">
+    <section
+      id="about"
+      className="relative overflow-hidden pb-16 pt-8 md:pt-[4.5rem]"
+    >
       <h3 className="title-section">Sobre Mi</h3>
       <div className="grid-cols-[.5fr 3fr] grid justify-center gap-4  md:grid-cols-[1fr,2fr] md:gap-10">
         <div className="order-1 flex flex-col gap-4">
@@ -30,6 +33,7 @@ function AboutMe() {
           <div className="content[''] absolute inset-0 -left-2 -top-2 z-10 h-[100%] w-[100%] rounded-sm border-[3px] border-slate-300 dark:border-[#006fee]" />
         </div>
       </div>
+      <div className="bg-green-gradient-radial absolute bottom-0 right-0 z-0 h-[300px] w-[300px] scale-150 rounded-full opacity-20 -hue-rotate-30" />
     </section>
   );
 }

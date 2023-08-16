@@ -43,7 +43,7 @@ function Skills() {
   ];
   return (
     <section id="skills" className="pb-16 pt-8 md:pt-[4.5rem]">
-      s<h3 className="title-section pb-4">Tecnologías que uso</h3>
+      <h3 className="title-section pb-4">Tecnologías que uso</h3>
       <div className="grid grid-cols-2 gap-6 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5">
         {LogosSkills.map((logo, i) => (
           <div
