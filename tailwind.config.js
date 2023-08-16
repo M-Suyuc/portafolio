@@ -10,13 +10,14 @@ export default {
         modeDarkBg: "#0F172A",
       },
       backgroundImage: {
-        "green-gradient-radial":
-          "radial-gradient(circle, #ccc 0,rgba(161,252,70,0) 71%)",
         "blue-gradient-radial":
-          "radial-gradient(circle,#0141ff 0,rgba(161,252,70,0) 71%)",
+          "radial-gradient(circle,#2838D1 0,rgba(161,252,70,0) 71%)",
+        "green-gradient-radial":
+          "radial-gradient(circle,#E402FF 0,rgba(161,252,70,0) 71%)",
+        "yellow-gradient-radial":
+          "radial-gradient(circle,#FDFF02 0,rgba(161,252,70,0) 71%)",
       },
     },
   },
   plugins: [],
 };
-// #DB2777
