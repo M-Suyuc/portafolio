@@ -42,7 +42,12 @@ function Skills() {
     },
   ];
   return (
-    <section id="skills" className="pb-16 pt-8 md:pt-[4.5rem]">
+    <section
+      id="skills"
+      className="relative overflow-hidden border border-solid border-gray-50/5 pb-16 pt-8 md:pt-[4.5rem]"
+    >
+      <div className="bg-yellow-gradient-radial absolute -bottom-1/2 left-0 right-0 z-0  m-auto h-[550px] w-[550px] rounded-full opacity-20" />
+
       <h3 className="title-section pb-4">Tecnologías que uso</h3>
       <div className="grid grid-cols-2 gap-6 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5">
         {LogosSkills.map((logo, i) => (

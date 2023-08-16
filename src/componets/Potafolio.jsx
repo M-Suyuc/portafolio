@@ -16,7 +16,10 @@ function Potafolio() {
   ];
 
   return (
-    <section id="portfolio" className="pb-16 pt-8 md:pt-[4.5rem]">
+    <section
+      id="portfolio"
+      className="relative overflow-hidden border border-solid border-gray-50/5 pb-16 pt-8 md:pt-[4.5rem]"
+    >
       <h3 className="title-section">Portafolio</h3>
       <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3">
         {proyectos.map((proyecto, index) => {

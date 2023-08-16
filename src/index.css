@@ -29,6 +29,5 @@
   .title-section{
     color: transparent;
     -webkit-text-stroke: #006fee 1px;
-    text-shadow: 0px 0px 60px rgba(30, 51, 243, 0.753);
-    /* font-family: cursive; */
+    text-shadow: 0px 0px 50px rgba(30, 51, 243, 0.753);
   }
