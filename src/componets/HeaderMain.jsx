@@ -1,6 +1,6 @@
 import React from "react";
 import { ArrowDown, Contactme, Github, Linkedin } from "./SVGIcons";
-import profile from "../assets/img-profile.jpg";
+import profile from "../assets/img-profile.png";
 
 function HeaderMain() {
   return (
@@ -30,11 +30,7 @@ function HeaderMain() {
 
         {/* img */}
         <div className="relative my-10 mb-5 h-[180px] w-[180px] max-w-[300px] overflow-hidden rounded-full shadow-[0px_0px_25px_rgba(0,0,0,.3)] dark:shadow-[0px_0px_40px_rgba(255,255,255,.4)]  md:order-1 md:m-12 md:h-[250px] md:w-[250px] md:place-self-center lg:h-[300px]  lg:w-[300px] lg:place-self-end">
-          <img
-            className="h-full w-full object-cover"
-            src={profile}
-            alt="Imagen perfil"
-          />
+          <img src={profile} alt="Imagen perfil" />
         </div>
 
         {/* Text */}

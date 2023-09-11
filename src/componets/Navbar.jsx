@@ -13,25 +13,26 @@ import Container from "../componets/Container";
 
 function Navbar({ isVisible }) {
   const [isOpen, setIsOpen] = useState(false);
-  const [darkMode, setDarkMode] = useState(undefined);
+  const [darkMode, setDarkMode] = useState(() => {
+    if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
+      return "dark";
+    }
+    return "light";
+  });
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
 
   const changeDarkMode = () => {
-    setDarkMode(!darkMode);
+    setDarkMode((prevTheme) => (prevTheme === "light" ? "dark" : "light"));
   };
 
   useEffect(() => {
-    if (darkMode) {
-      localStorage.setItem("darkMode", "true");
-      window.document.documentElement.classList.add("dark");
-    } else if (darkMode === false) {
-      localStorage.setItem("darkMode", "false");
-      window.document.documentElement.classList.remove("dark");
+    if (darkMode === "dark") {
+      document.querySelector("html").classList.add("dark");
     } else {
-      setDarkMode(localStorage.getItem("darkMode") === "true");
+      document.querySelector("html").classList.remove("dark");
     }
   }, [darkMode]);
 
