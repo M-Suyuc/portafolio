@@ -4,10 +4,10 @@ import Nabvar from "./componets/Navbar";
 import Footer from "./componets/Footer";
 import AboutMe from "./componets/AboutMe";
 import BtnscrollToTop from "./componets/BtnscrollToTop";
-import HeaderMain from "./componets/HeaderMain";
 import Potafolio from "./componets/Potafolio";
 import Skills from "./componets/Skills";
 import pattern from "./assets/looper-pattern.svg";
+import Hero from "./componets/Hero";
 
 function App() {
   const [isVisible, setIsVisible] = useState(false);
@@ -46,7 +46,7 @@ function App() {
           className="absolute -top-0  left-0 h-[calc(100vh_-_0rem)] w-full bg-cover md:left-28"
         />
         <Container>
-          <HeaderMain />
+          <Hero />
           <AboutMe />
           <Potafolio />
           <Skills />
