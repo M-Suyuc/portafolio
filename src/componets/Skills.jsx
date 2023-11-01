@@ -1,44 +1,47 @@
 import {
   CssSvg,
+  GitSvg,
   HtmlSvg,
   JavaScriptSvg,
   ReactSvg,
   ReduxSvg,
-  SupabaseSvg,
   TailwindSvg,
+  TypeScriptSvg,
 } from "./SVGIcons";
 
 function Skills() {
-  const width = 50;
-
   const LogosSkills = [
     {
-      title: "HTML",
-      img: <HtmlSvg width={width} />,
-    },
-    {
-      title: "CSS",
-      img: <CssSvg width={width} />,
+      title: "React.js",
+      img: <ReactSvg />,
     },
     {
       title: "JavaScript",
-      img: <JavaScriptSvg width={width} />,
+      img: <JavaScriptSvg />,
     },
     {
-      title: "Tailwind",
-      img: <TailwindSvg width={width} />,
-    },
-    {
-      title: "React.js",
-      img: <ReactSvg width={width} />,
+      title: "TypeScript",
+      img: <TypeScriptSvg />,
     },
     {
       title: "Redux Toolkit",
-      img: <ReduxSvg width={width} />,
+      img: <ReduxSvg />,
     },
     {
-      title: "Supabase",
-      img: <SupabaseSvg width={width} />,
+      title: "Git",
+      img: <GitSvg />,
+    },
+    {
+      title: "Tailwind",
+      img: <TailwindSvg />,
+    },
+    {
+      title: "HTML",
+      img: <HtmlSvg />,
+    },
+    {
+      title: "CSS",
+      img: <CssSvg />,
     },
   ];
   return (
@@ -46,7 +49,7 @@ function Skills() {
       id="skills"
       className="relative overflow-hidden pb-16 pt-8 md:pt-[4.5rem]"
     >
-      <h3 className="title-section pb-4">Tecnologías que uso</h3>
+      <h3 className="title-section pb-4">Tecnologías</h3>
       <div className="grid grid-cols-2 gap-6 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5">
         {LogosSkills.map((logo, i) => (
           <div
