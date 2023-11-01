@@ -1,28 +1,17 @@
-import ecommerce from "../assets/ecommerce.png";
 import { ArrowUpRight, Github } from "./SVGIcons";
 import clsx from "clsx";
+import { proyects } from "../mocks/proyects.json";
+import ecommerce from "../assets/ecommerce.png";
 
 function Potafolio() {
-  const proyectos = [
-    {
-      title: "Ecommerce",
-      img: ecommerce,
-      enlaceGithub: "https://github.com/M-Suyuc/e-commerce",
-      enlaceWeb: "https://marlostore.vercel.app/",
-      lenguages: ["React.js", "Redux Toolkit", "Tailwind CSS"],
-      content:
-        "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Distinctio dolor dicta nisi quidem aliquid modi fuga eos.",
-    },
-  ];
-
   return (
     <section
       id="portfolio"
-      className="relative overflow-hidden border border-solid border-gray-50/5 pb-16 pt-8 md:pt-[4.5rem]"
+      className="relative  overflow-hidden border border-solid border-gray-50/5 pb-16 pt-8 md:pt-[4.5rem]"
     >
       <h3 className="title-section">Portafolio</h3>
       <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3">
-        {proyectos.map((proyecto, index) => {
+        {proyects.map((proyecto, index) => {
           const { title, img, enlaceGithub, enlaceWeb, lenguages, content } =
             proyecto;
           return (
@@ -48,38 +37,37 @@ function Potafolio() {
                   "bg-[linear-gradient(40deg,var(--tw-gradient-stops))] from-pink-300/80 to-violet-500/40 shadow-violet-500/20",
               )}
             >
-              <figure className="aspect-2 relative flex w-full">
+              <figure>
                 <img
-                  src={img}
+                  src={ecommerce}
                   className="rounded-t-lg object-cover object-center [mask-image:linear-gradient(180deg,#fff_16.35%,rgb(255_255_255_/_0%)_91.66%)]"
                 />
               </figure>
 
-              <div className="relative flex flex-col justify-between px-3 pb-3 pt-1">
+              <main className="relative flex flex-col justify-between px-3 pb-3 pt-1">
                 <div className="flex flex-col gap-3">
                   <h4 className="text-xl font-semibold text-gray-700 first-letter:uppercase dark:text-modeDarkTitle">
                     {title}
                   </h4>
 
-                  <div className="-ml-0.5 mt-0.5 flex flex-wrap items-center gap-2 tracking-tight text-slate-100 dark:text-slate-300">
+                  <div className="-ml-0.5 mt-0.5 flex flex-wrap items-center gap-1 tracking-tight text-slate-100 dark:text-slate-300">
                     {lenguages.map((len, i) => {
                       return (
                         <h3
                           key={i}
-                          className="flex select-none items-center gap-1 rounded border border-gray-700/10 bg-gray-900/50 px-1.5 py-[2px] text-[14px] dark:bg-gray-900/20"
+                          className="flex items-center gap-1 rounded border border-gray-700/10 bg-gray-900/50 px-1.5 py-[2px] text-[14px] dark:bg-gray-900/20"
                         >
                           {len}
                         </h3>
                       );
                     })}
                   </div>
-                  <main>
-                    <p className="mb-6 mt-2 text-[15px] tracking-tight text-gray-700 dark:text-gray-200 ">
-                      {content}
-                    </p>
-                  </main>
+
+                  <p className="mb-6 mt-2 line-clamp-2 text-[15px] tracking-tight text-gray-700 dark:text-gray-200">
+                    {content}
+                  </p>
                 </div>
-              </div>
+              </main>
 
               <footer className="absolute bottom-3 left-0 mt-auto flex w-full items-end justify-end gap-2 px-4">
                 {enlaceGithub && (
