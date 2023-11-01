@@ -1,0 +1,12 @@
+{
+  "proyects": [
+    {
+      "title": "Ecommerce",
+      "img": "../assets/ecommerce.png",
+      "enlaceGithub": "https://github.com/M-Suyuc/e-commerce",
+      "enlaceWeb": "https://marlostore.vercel.app/",
+      "lenguages": ["React.js", "Redux Toolkit", "Tailwind CSS"],
+      "content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo necessitatibus quam nemo tenetur! Dolore inventore provident molestiae nam impedit, sapiente dignissimos, exercitationem aliquid quo obcaecati quisquam similique esse fuga pariatur."
+    }
+  ]
+}
