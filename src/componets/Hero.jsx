@@ -41,7 +41,7 @@ function Hero() {
           <h3 className="mb-1 inline-block bg-black bg-gradient-to-r from-indigo-600 to-pink-500 box-decoration-slice px-2 py-2  text-lg font-medium text-white md:text-xl lg:text-3xl  lg:font-bold">
             Frontend Developer
           </h3>
-          <p className="pb-3 text-zinc-700 dark:text-modeDarkParrafo">
+          <p className="text pb-3">
             Creando soluciones modernas e interactivas. Comprometido con la
             seguridad y la mejora continua.
           </p>

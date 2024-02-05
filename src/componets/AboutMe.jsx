@@ -5,27 +5,23 @@ function AboutMe() {
   return (
     <section
       id="about"
-      className="relative overflow-hidden  pb-16 pt-8 md:pt-[4.5rem]"
+      className="relative overflow-hidden pb-16 pt-8 md:pt-[4.5rem]"
     >
       <div className="absolute -bottom-1/2 left-0 right-0 z-0 m-auto  h-[550px] w-[550px] rounded-full bg-green-gradient-radial opacity-20" />
 
       <h3 className="title-section">Sobre Mi</h3>
       <div className="grid-cols-[.5fr 3fr] grid justify-center gap-4  md:grid-cols-[1fr,2fr] md:gap-10">
         <div className="order-1 flex flex-col gap-4">
-          <div className="text-[#11181C] dark:text-[#a1a1aa]">
-            Soy Marlon, desarrollador web de 22 años, dedicado a crear
-            experiencias digitales únicas y funcionales.
-            <br />
+          <div className="text">
+            Desarrollador web, dedicado a crear experiencias digitales únicas y
+            funcionales.
             <br />
             Con una mentalidad enfocada en el aprendizaje constante, busco
             enfrentar desafíos y superar expectativas en cada proyecto que
             emprendo.
           </div>
-          {/* <a href="#" className="button mx-auto md:ml-0">
-            Descagar cv <Download />
-          </a> */}
         </div>
-        <div className="group relative z-30 mx-auto my-4 h-[180px] w-[180px] md:h-[235px] md:w-[220px] ">
+        <div className="relative z-30 mx-auto my-4 h-[180px] w-[180px] md:h-[235px] md:w-[220px] ">
           <img
             className="relative z-20 h-full w-full overflow-hidden rounded-sm object-cover"
             src={profile}

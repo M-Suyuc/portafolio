@@ -5,8 +5,8 @@ export default {
   theme: {
     extend: {
       colors: {
-        modeDarkTitle: "#E2E8F0",
-        modeDarkParrafo: "#94A3B8",
+        modeDarkTitle: "#fff",
+        modeDarkParrafo: "text-gray-400",
         modeDarkBg: "#0F172A",
       },
       backgroundImage: {

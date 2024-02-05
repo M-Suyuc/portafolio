@@ -47,8 +47,8 @@ function App() {
         />
         <Container>
           <Hero />
-          <AboutMe />
           <Potafolio />
+          <AboutMe />
           <Skills />
         </Container>
       </main>

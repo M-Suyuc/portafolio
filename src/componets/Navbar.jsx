@@ -58,12 +58,12 @@ function Navbar({ isVisible }) {
           >
             <li>
               <a
-                href="#"
+                href="#portfolio"
                 onClick={toggleMenu}
                 className="hover:fill-[#006fee] hover:text-[#006fee] dark:fill-white/80 dark:text-white/60 dark:hover:fill-[#006fee] dark:hover:text-[#006fee] md:hover:bg-slate-500/25 dark:md:hover:bg-white/10"
               >
-                <Home />
-                Inicio
+                <Portfolio />
+                Portafolio
               </a>
             </li>
             <li>
@@ -74,16 +74,6 @@ function Navbar({ isVisible }) {
               >
                 <Profile />
                 Sobre mí
-              </a>
-            </li>
-            <li>
-              <a
-                href="#portfolio"
-                onClick={toggleMenu}
-                className="hover:fill-[#006fee] hover:text-[#006fee] dark:fill-white/80 dark:text-white/60 dark:hover:fill-[#006fee] dark:hover:text-[#006fee] md:hover:bg-slate-500/25 dark:md:hover:bg-white/10"
-              >
-                <Portfolio />
-                Portafolio
               </a>
             </li>
             <li>
