@@ -16,7 +16,7 @@
 
 @font-face {
   font-family: Bar;
-  src: url("/public/inter-var-latin.woff2");
+  src: url("/inter-var-latin.woff2");
 }
 * {
   font-family: Bar;
